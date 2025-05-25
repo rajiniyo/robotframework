@@ -8,3 +8,7 @@ ${login_button}       id=submit
 ${dashboard_header}   xpath=//h1[text()='Logged In Successfully']
 ${menu_reports}       xpath=//a[text()='Home']
 ${report_header}      css=.header-middle
+${test1}              id=user
+${test2}              css=user2
+
+
