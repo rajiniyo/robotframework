@@ -1,0 +1,4 @@
+*** Test Cases ***,username,password
+Valid user name with invalid password,student,Password12345
+Invalid user name with valid password,username,Password123
+Invalid user name with invalid password,test,Test123

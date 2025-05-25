@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-25T10:27:21.418106" rpa="false" schemaversion="5">
+<suite id="s1" name="FriendWithRobotFramework" source="C:\Users\user\PycharmProjects\FriendWithRobotFramework">
+<suite id="s1-s1" name="Tests" source="C:\Users\user\PycharmProjects\FriendWithRobotFramework\tests">
+<suite id="s1-s1-s1" name="testLogin" source="C:\Users\user\PycharmProjects\FriendWithRobotFramework\tests\testLogin.robot">
+<test id="s1-s1-s1-t1" name="Login With Valid Credentials" line="7">
+<kw name="Open Browser To Login Page" owner="testKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-25T10:27:21.742047" level="INFO">Opening browser 'Chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<arg>${base_url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-25T10:27:21.741867" elapsed="7.195080"/>
+</kw>
+<status status="PASS" start="2025-05-25T10:27:21.741331" elapsed="7.196592"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-25T10:27:28.943670" level="INFO">Typing text 'student' into text field 'id=username'.</msg>
+<arg>${username_field}</arg>
+<arg>${valid_username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-25T10:27:28.942939" elapsed="0.110212"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-25T10:27:29.053710" level="INFO">Typing text 'Password123' into text field 'id=password'.</msg>
+<arg>${password_field}</arg>
+<arg>${valid_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-25T10:27:29.053489" elapsed="0.080821"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-25T10:27:29.136247" level="INFO">Clicking button 'id=submit'.</msg>
+<arg>${login_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-25T10:27:29.135919" elapsed="0.912357"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${dashboard_header}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-25T10:27:30.051564" elapsed="0.022662"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-05-25T10:27:30.081580" level="INFO">Current page contains element 'xpath=//h1[text()='Logged In Successfully']'.</msg>
+<arg>${dashboard_header}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-05-25T10:27:30.074646" elapsed="0.007015"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-25T10:27:30.081958" elapsed="2.179462"/>
+</kw>
+<tag>Login</tag>
+<tag>Smoke</tag>
+<status status="PASS" start="2025-05-25T10:27:21.740636" elapsed="10.521806"/>
+</test>
+<test id="s1-s1-s1-t2" name="Dashboard Menu Navigation" line="17">
+<kw name="Open Browser To Login Page" owner="testKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-25T10:27:32.265452" level="INFO">Opening browser 'Chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<arg>${base_url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-25T10:27:32.265111" elapsed="3.839445"/>
+</kw>
+<status status="PASS" start="2025-05-25T10:27:32.264571" elapsed="3.840270"/>
+</kw>
+<kw name="Perform Valid Login" owner="testKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-25T10:27:36.106756" level="INFO">Typing text 'student' into text field 'id=username'.</msg>
+<arg>${username_field}</arg>
+<arg>${valid_username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-25T10:27:36.106313" elapsed="0.107084"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-25T10:27:36.214338" level="INFO">Typing text 'Password123' into text field 'id=password'.</msg>
+<arg>${password_field}</arg>
+<arg>${valid_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-25T10:27:36.213691" elapsed="0.084931"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-25T10:27:36.299167" level="INFO">Clicking button 'id=submit'.</msg>
+<arg>${login_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-25T10:27:36.298895" elapsed="0.952368"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${dashboard_header}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-25T10:27:37.251503" elapsed="0.020769"/>
+</kw>
+<status status="PASS" start="2025-05-25T10:27:36.105744" elapsed="1.166616"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-25T10:27:37.272899" level="INFO">Clicking element 'xpath=//a[text()='Home']'.</msg>
+<arg>${menu_reports}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-25T10:27:37.272711" elapsed="0.960847"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-05-25T10:27:38.272617" level="INFO">Current page contains element 'css=.header-middle'.</msg>
+<arg>${report_header}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-05-25T10:27:38.234317" elapsed="0.038414"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-25T10:27:38.273465" elapsed="2.159942"/>
+</kw>
+<tag>Dashboard</tag>
+<tag>Regression</tag>
+<status status="PASS" start="2025-05-25T10:27:32.263663" elapsed="8.170458"/>
+</test>
+<status status="PASS" start="2025-05-25T10:27:21.446828" elapsed="18.988551"/>
+</suite>
+<status status="PASS" start="2025-05-25T10:27:21.445779" elapsed="18.990869"/>
+</suite>
+<status status="PASS" start="2025-05-25T10:27:21.420006" elapsed="19.017385"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Dashboard</stat>
+<stat pass="1" fail="0" skip="0">Login</stat>
+<stat pass="1" fail="0" skip="0">Regression</stat>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat name="FriendWithRobotFramework" id="s1" pass="2" fail="0" skip="0">FriendWithRobotFramework</stat>
+<stat name="Tests" id="s1-s1" pass="2" fail="0" skip="0">FriendWithRobotFramework.Tests</stat>
+<stat name="testLogin" id="s1-s1-s1" pass="2" fail="0" skip="0">FriendWithRobotFramework.Tests.testLogin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
